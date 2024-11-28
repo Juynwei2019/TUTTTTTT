@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUTTING 入門</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #34495e;
+            color: white;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            display: flex;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        .main-content {
+            flex-grow: 1;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .code-block {
+            background-color: #f1f1f1;
+            border-left: 4px solid #2c3e50;
+            padding: 10px;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TUTTING入門教學</h1>
+            <p>從零開始學習TUTTING</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">TUTTING 教學</a></li>
+            <li><a href="#">JavaScript 教學</a></li>
+            <li><a href="#">課程資源</a></li>
+        </ul>
+    </nav>
+
+    <div class="container content">
+        <div class="sidebar">
+            <h3>學習路徑</h3>
+            <ul>
+                <li>基礎入門</li>
+                <li>變數與資料型態</li>
+                <li>條件判斷</li>
+                <li>迴圈</li>
+                <li>函式</li>
+                <li>物件導向</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>Python 基礎入門</h2>
+            <p>歡迎來到程式設計的世界！本課程將帶您從零開始學習 Python 程式語言。</p>
+
+            <h3>第一個 Python 程式</h3>
+            <div class="code-block">
+                <pre><code>
+# 這是您的第一個 Python 程式
+print("Hello, World!")
+                </code></pre>
+            </div>
+
+            <p>在上面的程式碼中，<code>print()</code> 是 Python 的內建函式，用於在螢幕上顯示文字。</p>
+
+            <h3>變數與資料型態</h3>
+            <div class="code-block">
+                <pre><code>
+# 變數宣告
+name = "小明"       # 字串
+age = 25           # 整數
+height = 1.75      # 浮點數
+is_student = True  # 布林值
+
+print(f"姓名：{name}，年齡：{age}")
+                </code></pre>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 程式設計入門教學 | 歡迎分享與學習</p>
+        </div>
+    </footer>
+</body>
+</html>
